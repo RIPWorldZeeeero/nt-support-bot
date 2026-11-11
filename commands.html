@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Все slash-команды Discord-бота Support Net Tweaking Studio: лицензии, офлайн-активация и администрирование.">
+<meta name="theme-color" content="#09070f">
+<title>Команды Discord-бота | Support Net Tweaking Studio</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Стили каталога команд. Основная тема сайта — в style.css */
+.commands-intro{position:relative;overflow:hidden;border:1px solid var(--border);border-radius:24px;padding:clamp(24px,5vw,48px);background:radial-gradient(circle at 88% 0%,rgba(218,51,255,.16),transparent 48%),linear-gradient(145deg,#21132e,#130d1d 70%);box-shadow:0 18px 55px rgba(0,0,0,.22)}
+.commands-intro h1{max-width:750px;margin:10px 0 14px;font-size:clamp(32px,5vw,55px);line-height:1.1}
+.commands-intro .lead{max-width:740px;font-size:18px;color:#ddcfea}
+.cmd-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.cmd-pill{padding:7px 13px;border:1px solid #624071;border-radius:999px;color:#ebddf4;background:rgba(255,255,255,.04);font-size:13px}
+.cmd-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin:26px 0}
+.cmd-search{width:min(100%,480px);flex:1 1 240px;padding:15px 18px;border:1px solid #6a427d;background:#181021;color:white;border-radius:12px;font:inherit;outline:none}
+.cmd-search:focus{border-color:var(--magenta);box-shadow:0 0 0 3px rgba(218,51,255,.16)}
+.cmd-shortcuts{display:flex;flex-wrap:wrap;gap:8px}
+.cmd-shortcuts a{display:inline-flex;padding:11px 16px;text-decoration:none;border-radius:11px;background:#2a1937;border:1px solid #5b3970;color:#f0d8fa;font-size:14px}
+.cmd-shortcuts a:hover{background:#3d2251}
+.cmd-section{margin:38px 0}
+.cmd-section-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.cmd-section-heading h2{margin:4px 0;font-size:clamp(22px,3vw,30px)}
+.cmd-section-heading .eyebrow{margin:0}
+.cmd-count{font-size:13px;color:#d5c2e5;background:#22162f;border:1px solid #583c6a;padding:5px 12px;border-radius:30px}
+.cmd-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cmd-card{display:flex;flex-direction:column;min-width:0;padding:23px;border:1px solid #483159;background:linear-gradient(160deg,#1b1328,#140f1e);border-radius:17px}
+.cmd-card:hover{border-color:#874ca1}
+.cmd-card-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.cmd-name{display:inline-block;padding:5px 10px;color:#f4caff;background:#392047;border-radius:8px;font-size:15px;font-weight:750}
+.cmd-role{font-size:12px;color:#b7a7c7}
+.cmd-card h3{font-size:18px;margin:19px 0 6px;line-height:1.35}
+.cmd-card p{margin:0 0 20px;font-size:14px;color:#c5b7d2;flex:1}
+.cmd-example{display:flex;align-items:center;flex-wrap:wrap;gap:10px;background:#0e0916;border:1px solid #392448;border-radius:10px;padding:12px}
+.cmd-example span{display:block;flex-basis:100%;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#a997ba}
+.cmd-example code{font-size:12px;color:#f4dafa;overflow-wrap:anywhere;flex:1}
+.cmd-copy{border:1px solid #73438a;border-radius:8px;background:#2b193b;color:white;padding:7px 11px;cursor:pointer;font:inherit;font-size:12px}
+.cmd-copy:hover{background:#4b2461}
+.cmd-copy:focus-visible{outline:2px solid white;outline-offset:2px}
+.cmd-help{background:#181021;border:1px solid var(--border);border-radius:19px;padding:26px;margin:38px 0}
+.cmd-help h2{margin-top:0}
+.cmd-help ol{padding-left:22px}
+.cmd-help li{margin:10px 0}
+.cmd-help code{background:#372047;color:#f0c6ff;border-radius:4px;padding:2px 5px}
+.cmd-help a{overflow-wrap:anywhere}
+.cmd-empty{color:#dabee7;padding:20px;background:#1d1429;border-radius:12px}
+[hidden]{display:none!important}
+@media(max-width:720px){.cmd-grid{grid-template-columns:1fr}.cmd-card{padding:18px}.cmd-toolbar{align-items:stretch}.cmd-shortcuts{width:100%}.cmd-shortcuts a{flex:1;justify-content:center}.cmd-example{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a href="#main" style="position:absolute;left:-9999px;top:auto" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Перейти к командам</a>
+<header class="site-header">
+<nav class="navigation" aria-label="Навигация">
+<a class="brand" href="index.html"><img src="assets/logo.png" class="logo" alt="" width="44" height="44"><span>Net Tweaking Studio</span></a>
+<div class="nav-links"><a href="index.html">Главная</a><a href="commands.html" aria-current="page" style="color:#f0b9ff">Команды</a><a href="terms.html">Условия</a><a href="privacy.html">Конфиденциальность</a><a href="support.html">Поддержка</a></div>
+</nav>
+</header>
+<main class="container" id="main">
+<section class="commands-intro">
+<p class="eyebrow">SUPPORT NET TWEAKING STUDIO / COMMAND CENTER</p>
+<h1>Команды Discord-бота</h1>
+<p class="lead">Справочник по лицензиям NT Launcher Premium, офлайн-активации и командам администрирования. Все команды вводятся в Discord через символ <strong>/</strong>.</p>
+<div class="cmd-pills"><span class="cmd-pill">11 slash-команд</span><span class="cmd-pill">4 для пользователей</span><span class="cmd-pill">7 для администраторов</span><span class="cmd-pill">Discord / NT Launcher Premium</span></div>
+<div class="actions"><a class="button button-discord" href="https://discord.com/oauth2/authorize?client_id=1554139814817964043&amp;scope=bot%20applications.commands&amp;permissions=0" target="_blank" rel="noopener noreferrer">Пригласить бота</a><a class="button button-secondary" href="#users">Смотреть команды</a></div>
+</section>
+<div class="cmd-toolbar">
+<input id="command-search" class="cmd-search" type="search" placeholder="Поиск команды: /activate, лицензия…" aria-label="Поиск по командам" autocomplete="off">
+<nav class="cmd-shortcuts" aria-label="Разделы команд"><a href="#users">Пользователям</a><a href="#admins">Администраторам</a></nav>
+</div>
+<p id="command-results" class="cmd-empty" role="status" hidden>По вашему запросу команды не найдены.</p>
+<section class="cmd-section" id="users" aria-labelledby="users-title">
+<div class="cmd-section-heading"><div><p class="eyebrow">Доступны пользователям</p><h2 id="users-title">Для пользователей</h2></div><span class="cmd-count">4 команды</span></div>
+<div class="cmd-grid"><article class="cmd-card" data-command-card data-search="/about информация о support net tweaking studio показывает назначение бота и основные возможности. /about">
+<div class="cmd-card-top"><code class="cmd-name">/about</code><span class="cmd-role">Пользователь</span></div>
+<h3>Информация о Support Net Tweaking Studio</h3><p>Показывает назначение бота и основные возможности.</p>
+<div class="cmd-example"><span>Пример</span><code>/about</code><button class="cmd-copy" type="button" data-copy="/about" aria-label="Скопировать пример команды /about">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license мои лицензии показывает до 10 лицензий nt launcher premium, связанных с вашим discord id. /license">
+<div class="cmd-card-top"><code class="cmd-name">/license</code><span class="cmd-role">Пользователь</span></div>
+<h3>Мои лицензии</h3><p>Показывает до 10 лицензий NT Launcher Premium, связанных с вашим Discord ID.</p>
+<div class="cmd-example"><span>Пример</span><code>/license</code><button class="cmd-copy" type="button" data-copy="/license" aria-label="Скопировать пример команды /license">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/activate запрос офлайн-активации отправляет код запроса ntreq1 из лаунчера на проверку администратору. id лицензии можно указать дополнительно. /activate request_code:ntreq1...">
+<div class="cmd-card-top"><code class="cmd-name">/activate</code><span class="cmd-role">Пользователь</span></div>
+<h3>Запрос офлайн-активации</h3><p>Отправляет код запроса NTREQ1 из лаунчера на проверку администратору. ID лицензии можно указать дополнительно.</p>
+<div class="cmd-example"><span>Пример</span><code>/activate request_code:NTREQ1...</code><button class="cmd-copy" type="button" data-copy="/activate request_code:NTREQ1..." aria-label="Скопировать пример команды /activate">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_claim получить код активации позволяет повторно получить код одобренного запроса после решения администратора. /license_claim request_id:123">
+<div class="cmd-card-top"><code class="cmd-name">/license_claim</code><span class="cmd-role">Пользователь</span></div>
+<h3>Получить код активации</h3><p>Позволяет повторно получить код одобренного запроса после решения администратора.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_claim request_id:123</code><button class="cmd-copy" type="button" data-copy="/license_claim request_id:123" aria-label="Скопировать пример команды /license_claim">Копировать</button></div>
+</article></div></section>
+<section class="cmd-section" id="admins" aria-labelledby="admins-title">
+<div class="cmd-section-heading"><div><p class="eyebrow">Только разрешённые Discord ID</p><h2 id="admins-title">Для администраторов</h2></div><span class="cmd-count">7 команды</span></div>
+<div class="cmd-grid"><article class="cmd-card" data-command-card data-search="/license_issue выдать лицензию создаёт лицензию nt launcher premium для выбранного discord-пользователя. /license_issue owner:@user">
+<div class="cmd-card-top"><code class="cmd-name">/license_issue</code><span class="cmd-role">Админ</span></div>
+<h3>Выдать лицензию</h3><p>Создаёт лицензию NT Launcher Premium для выбранного Discord-пользователя.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_issue owner:@user</code><button class="cmd-copy" type="button" data-copy="/license_issue owner:@user" aria-label="Скопировать пример команды /license_issue">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_pending ожидающие активации показывает последние запросы на офлайн-активацию, ожидающие решения. /license_pending">
+<div class="cmd-card-top"><code class="cmd-name">/license_pending</code><span class="cmd-role">Админ</span></div>
+<h3>Ожидающие активации</h3><p>Показывает последние запросы на офлайн-активацию, ожидающие решения.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_pending</code><button class="cmd-copy" type="button" data-copy="/license_pending" aria-label="Скопировать пример команды /license_pending">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_approve одобрить компьютер одобряет запрос и создаёт подписанный офлайн-код активации. /license_approve request_id:123">
+<div class="cmd-card-top"><code class="cmd-name">/license_approve</code><span class="cmd-role">Админ</span></div>
+<h3>Одобрить компьютер</h3><p>Одобряет запрос и создаёт подписанный офлайн-код активации.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_approve request_id:123</code><button class="cmd-copy" type="button" data-copy="/license_approve request_id:123" aria-label="Скопировать пример команды /license_approve">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_deny отклонить запрос отклоняет указанный запрос активации. /license_deny request_id:123">
+<div class="cmd-card-top"><code class="cmd-name">/license_deny</code><span class="cmd-role">Админ</span></div>
+<h3>Отклонить запрос</h3><p>Отклоняет указанный запрос активации.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_deny request_id:123</code><button class="cmd-copy" type="button" data-copy="/license_deny request_id:123" aria-label="Скопировать пример команды /license_deny">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_info информация о лицензии показывает владельца, состояние лицензии и недавние запросы. /license_info license_id:ntl-xxxxxxxxxxxx">
+<div class="cmd-card-top"><code class="cmd-name">/license_info</code><span class="cmd-role">Админ</span></div>
+<h3>Информация о лицензии</h3><p>Показывает владельца, состояние лицензии и недавние запросы.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_info license_id:NTL-XXXXXXXXXXXX</code><button class="cmd-copy" type="button" data-copy="/license_info license_id:NTL-XXXXXXXXXXXX" aria-label="Скопировать пример команды /license_info">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_revoke отозвать лицензию запрещает будущие запросы активации. ранее выданные офлайн-коды продолжают действовать. /license_revoke license_id:ntl-xxxxxxxxxxxx">
+<div class="cmd-card-top"><code class="cmd-name">/license_revoke</code><span class="cmd-role">Админ</span></div>
+<h3>Отозвать лицензию</h3><p>Запрещает будущие запросы активации. Ранее выданные офлайн-коды продолжают действовать.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_revoke license_id:NTL-XXXXXXXXXXXX</code><button class="cmd-copy" type="button" data-copy="/license_revoke license_id:NTL-XXXXXXXXXXXX" aria-label="Скопировать пример команды /license_revoke">Копировать</button></div>
+</article>
+<article class="cmd-card" data-command-card data-search="/license_reset сбросить сетевые привязки удаляет старые сетевые привязки устройства. уже подписанные офлайн-лицензии не отзываются. /license_reset license_id:ntl-xxxxxxxxxxxx">
+<div class="cmd-card-top"><code class="cmd-name">/license_reset</code><span class="cmd-role">Админ</span></div>
+<h3>Сбросить сетевые привязки</h3><p>Удаляет старые сетевые привязки устройства. Уже подписанные офлайн-лицензии не отзываются.</p>
+<div class="cmd-example"><span>Пример</span><code>/license_reset license_id:NTL-XXXXXXXXXXXX</code><button class="cmd-copy" type="button" data-copy="/license_reset license_id:NTL-XXXXXXXXXXXX" aria-label="Скопировать пример команды /license_reset">Копировать</button></div>
+</article></div></section>
+<section class="cmd-help" aria-labelledby="help-heading">
+<h2 id="help-heading">Как пользоваться командами</h2>
+<ol>
+<li>Добавьте бота на Discord-сервер и откройте канал, где разрешены команды приложения.</li>
+<li>Введите символ <code>/</code> и выберите нужную команду из списка Discord.</li>
+<li>Для офлайн-активации создайте запрос <code>NTREQ1...</code> в NT Launcher Premium, отправьте его через <code>/activate</code> и получите решение администратора. Одобренный код можно получить через <code>/license_claim</code>.</li>
+<li>Команды выдачи, одобрения, отклонения и отзыва лицензий доступны только Discord ID, указанным в настройках администраторов бота.</li>
+</ol>
+<p class="notice"><strong>Важно:</strong> отзыв лицензии через <code>/license_revoke</code> запрещает новые активации, но не отменяет ранее выданные подписанные офлайн-коды. Пересылка сообщений между каналами настраивается отдельно в конфигурации бота и не имеет slash-команды в представленных исходниках.</p>
+<p>Если команда не видна, проверьте подключение бота, права приложения и синхронизацию slash-команд. Доступность функций зависит от установленной версии бота.</p>
+</section>
+</main>
+<footer class="site-footer"><p>© 2026 Net Tweaking Studio · <a href="support.html">Связаться с поддержкой</a></p><p>Независимый проект, не связанный с Discord Inc.</p></footer>
+<script>
+(function () {
+  "use strict";
+  var input = document.getElementById("command-search");
+  var cards = Array.prototype.slice.call(document.querySelectorAll("[data-command-card]"));
+  var empty = document.getElementById("command-results");
+  var sections = Array.prototype.slice.call(document.querySelectorAll(".cmd-section"));
+  function filterCommands() {
+    var query = input.value.trim().toLocaleLowerCase("ru");
+    var shown = 0;
+    cards.forEach(function (card) {
+      var visible = !query || card.getAttribute("data-search").indexOf(query) !== -1;
+      card.hidden = !visible;
+      if (visible) shown++;
+    });
+    sections.forEach(function (section) {
+      section.hidden = !Array.prototype.some.call(section.querySelectorAll("[data-command-card]"), function (card) { return !card.hidden; });
+    });
+    empty.hidden = shown !== 0;
+  }
+  input.addEventListener("input", filterCommands);
+  Array.prototype.forEach.call(document.querySelectorAll("[data-copy]"), function (button) {
+    button.addEventListener("click", async function () {
+      var value = button.getAttribute("data-copy");
+      try {
+        await navigator.clipboard.writeText(value);
+        var previous = button.textContent;
+        button.textContent = "Скопировано";
+        button.setAttribute("aria-label", "Пример скопирован");
+        button.blur();
+        window.setTimeout(function () { button.textContent = previous; button.setAttribute("aria-label", "Скопировать пример команды"); }, 1800);
+      } catch (error) {
+        button.textContent = "Выделите код";
+      }
+    });
+  });
+}());
+</script>
+</body>
+</html>
